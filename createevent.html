@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Event site</title>
+</head>
+<body>
+    <div class="container">
+        <header><h1>Event i Stockholm!</h1></header>
+
+        <div class="menu">
+            <div class="stickyMenu">
+                <ul>
+                    <li><a href="home.html">Hem</a></li>
+                    <li><a href="events.html">Alla event</a></li>
+                    <li><a href="createevent.html">Skapa event</a></li>
+                    <li><a href="aboutus.html">Om oss</a></li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="form">
+                <form>                        
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" valie="Name of event"><br><br>
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date" value="date"> <br><br>
+                    <label for="description" >Kort beskrivning:</label>
+                    <textarea name="description" id="description" cols="35" rows="8"></textarea><br><br>
+                    <label for="schedule">Agenda:</label>
+                    <textarea name="schedule" id="schedule" cols="35" rows="8"></textarea> <br> <br>
+                    
+                    <div class="row6">
+                        <label for="uploadPictures" >Bilder:</label>
+                        <input type="file" id="picture">
+                        <input type="file" id="picture">
+                        <input type="file" id="picture">
+                        <input type="file" id="picture"> 
+                    </div>
+
+                    <label for="category" >Kategori:</label><br>
+                    <select name="category" id="category" form="event" class="row7">
+                        <option value="nöje">Nöje</option>
+                        <option value="utbildning">Utbildning</option>
+                        <option value="afterwork">After work</option>
+                    </select>
+                </form>
+            </div>
+    </div>
+</body>
+</html>

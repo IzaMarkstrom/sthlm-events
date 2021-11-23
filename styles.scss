@@ -1,0 +1,188 @@
+body {
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(20, 20, 20));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 20% 25% 25% 25%;
+    padding: 40px;
+    text-align: center;
+
+    #infoBox {
+        text-align: left;
+    }
+
+    header {
+        background: linear-gradient(to right, #FF9966, #fab490 ,#FF00FF);
+        grid-column: 1 / 5;
+    }
+
+    .headerPic {
+        grid-column: 2 / 5;
+        background-image: url("https://www.dropbox.com/s/13jb4ix30m4w3oy/photo-1524368535928-5b5e00ddc76b.jfif?raw=1");
+        background-position: center;
+        background-attachment: fixed;
+        height: 300px;
+        color: white;
+    }
+
+    .menuBar {
+        border: 1px solid white;
+        position: sticky;
+        grid-area: 6 / 2 / 2 / 1;                
+    }
+
+    .smallEvent {
+        border: 1px solid white;
+    }
+}
+
+.stickyMenu {
+    top: 0;
+    position: sticky;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+li {
+    text-align: start;
+    list-style: none;
+    padding: 4%;
+}
+
+.eventCard {
+    padding: 0;
+    li {
+        padding: 3%;
+        a {
+            background-color: palevioletred;
+            border-radius: 50px;
+            padding: 2%
+        }
+        a:hover {
+            background-color: rgb(211, 70, 117);;
+        }
+    }
+}
+
+.frontPageEvent {
+    width: 100%;
+}
+
+.smallEvent10 {
+    border: 1px solid white;
+    grid-column: 2;
+}
+
+.detailPic {
+    width: 220px;
+    height: 170px;
+    transition: transform .2s;
+}
+
+.detailPic:hover {
+    transform: scale(1.1); 
+}
+
+.detailPictures {
+    grid-column: 2 / 5;
+    grid-row: 3;
+    text-align: start;
+}
+
+.col1 {
+    grid-column: 2;
+    text-align: end;
+}
+
+form {
+    text-align: start;
+}
+
+.form {
+    grid-column: 2/4;
+}
+
+label {
+    float: left;
+    width: 168px;
+    padding-right: 24px;
+}
+
+input {
+    float: right;
+    width: calc(100% - 200px);
+}
+
+select {
+    float: right;
+    width: calc(100% - 200px);
+}
+
+.submit {
+    margin-left: 42%;
+    width: calc(100% - 200px);
+    background-color: palevioletred;
+    color: white;
+}
+
+.owner {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+}
+
+.text {
+    grid-column: 2;
+    text-align: start;
+    h1 {
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 5px;
+    }
+}
+
+.ownerBox {
+    grid-column: 2;
+    text-align: start;
+    .VD {
+        display: inline-block;
+        transform: translate(+30px, -117px);
+    }
+    .phoneNumer {
+        transform: translate(+165px, -145px);
+    }
+    .email {
+        transform: translate(+165px, -155px);
+    }
+}
+
+.team {
+    grid-column: 2 / 4;
+    // text-align: start;
+    width:76%;
+}
+
+.teamPic {
+    max-width: 100%;
+}
+
+.contact {
+    background-color: rgb(36, 36, 36);
+    width:76%;
+    grid-column: 2/4;
+}
+
