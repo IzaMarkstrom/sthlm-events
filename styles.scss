@@ -12,8 +12,10 @@ body {
     padding: 40px;
     text-align: center;
 
-    #infoBox {
+    .infoBox {
         text-align: left;
+        margin-left: 2%;
+        display: none;
     }
 
     header {
@@ -172,7 +174,6 @@ select {
 
 .team {
     grid-column: 2 / 4;
-    // text-align: start;
     width:76%;
 }
 

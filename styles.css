@@ -12,8 +12,10 @@ body {
   padding: 40px;
   text-align: center;
 }
-.container #infoBox {
+.container .infoBox {
   text-align: left;
+  margin-left: 2%;
+  display: none;
 }
 .container header {
   background: linear-gradient(to right, #FF9966, #fab490, #FF00FF);
